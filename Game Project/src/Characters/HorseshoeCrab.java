@@ -9,10 +9,14 @@ public class HorseshoeCrab extends Critter{
 	
 	public void blueBlood(Critter aOyster, Critter aCrab){
 		if(this.getHealth() >= 10){
-			if(aOyster.getHealth() > 0 || aCrab.getHealth() > 0 && aOyster.getHealth() <= 90 || aCrab.getHealth() <= 90){
-				this.setHealth(this.getHealth() - 10);
-				aOyster.setHealth(aOyster.getHealth() + 10);
-				aCrab.setHealth(aCrab.getHealth() + 10);
+			this.setHealth(this.getHealth()-10);
+			aOyster.setHealth(aOyster.getHealth()+10);
+			aCrab.setHealth(aCrab.getHealth()+10);
+			if(aOyster.getHealth()>100){
+				aOyster.setHealth(100);
+			}
+			if(aCrab.getHealth()>100){
+				aCrab.setHealth(100);
 			}
 		}
 	}

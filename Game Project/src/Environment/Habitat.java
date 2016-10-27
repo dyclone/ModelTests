@@ -3,20 +3,22 @@ package Environment;
 import Hazards.WaterWaste;
 
 public class Habitat {
-	final int width = 200;
-	final int height = 100;
+	final int width;
+	final int height;
 	int Health;
 	int TrashCounter;
 	int RecycleCounter;
 	
 	public Habitat(int width, int height, int Health, int TrashCounter, int RecycleCounter){
+		this.width=width;
+		this.height=height;
 		this.Health = Health;
 		this.TrashCounter = TrashCounter;
 		this.RecycleCounter = RecycleCounter;			
 	}
 	
 	public void setHealth(int aHealth){
-		this.Health = Health;
+		this.Health = aHealth;
 	}
 	public void setTrashCounter(int TC){
 		this.TrashCounter = TC;

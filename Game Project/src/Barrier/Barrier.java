@@ -1,10 +1,10 @@
 package Barrier;
 
 public class Barrier {
-		 static int durability;
-		 static int x;
-		 static int y;
-		 static int cost;
+		  int durability;
+		  int x;
+		  int y;
+		  int cost;
 		 
 		 /** 
 		  * Returns a barrier object that will block waves at the end of the game
@@ -22,29 +22,29 @@ public class Barrier {
 			 this.cost = cost;
 		 }
 		 
-		 public static void setDur(int newDur){
+		 public  void setDur(int newDur){
 			    durability = newDur;
 		 }
-		 public static void setX(int newX){
+		 public  void setX(int newX){
 				x = newX;
 			}
-		 public static void setY(int newY){
+		 public  void setY(int newY){
 				y = newY;
 			}
-		 public static void setCost(int newCost){
+		 public  void setCost(int newCost){
 			   cost = newCost;
 		 }
 		 
-		 public static int getDur(){
+		 public  int getDur(){
 			 return durability;
 		 }
-		 public static int getX(){
+		 public  int getX(){
 				return x;
 			}
-		 public static int getY(){
+		 public  int getY(){
 				return y;
 			}
-		 public static int getCost(){
+		 public  int getCost(){
 			 return cost;
 		 }
 		

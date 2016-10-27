@@ -7,7 +7,7 @@ public class DropItem {
 
 	public DropItem(int x, int y){
 		this.x = x;
-		this.x = y; 
+		this.y = y; 
 	}
 	
 	public void setX(int X){
